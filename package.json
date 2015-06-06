@@ -1,0 +1,14 @@
+{
+  "name": "pace-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "JacekK",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.10.3"
+  }
+}
