@@ -9,8 +9,8 @@ describe 'pace-calc', ->
 		{ time: '4:00', dist: 1, pace: '4:00' }
 		{ time: '5:00', dist: 1.25, pace: '4:00' }
 		{ time: '23:12', dist: 5.73, pace: '4:03' }
-		{ time: '1:08:19', dist: 21.0975, pace: '3:14' }
-		{ time: '2:15:17', dist: 42.195, pace: '3:12' }
+		{ time: '1:08:13', dist: 21.0979, pace: '3:14' }
+		{ time: '2:15:01', dist: 42.193, pace: '3:12' }
 	]
 
 	beforeEach ->
@@ -25,7 +25,9 @@ describe 'pace-calc', ->
 
 	it 'should return proper distance', ->
 		for item in testData
-			distance = calc.getDistance(item.pace, item.time)
+			floatParts = item.dist.toString().split('.')
+			precision = (floatParts[1] || '').length
+			distance = calc.getDistance(item.pace, item.time, precision)
 			assert.equal(distance, item.dist)
 		return
 

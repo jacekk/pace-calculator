@@ -23,18 +23,33 @@ class PaceCalc
 		pace = seconds / kilometres / 60
 
 		paceMinutes = Math.floor pace
-		paceSeconds = pace - paceMinutes
-		paceSeconds = Math.round paceSeconds * 60
+		paceSeconds = (pace - paceMinutes) * 60
 
 		moment.duration({
 			minutes: paceMinutes
-			seconds: paceSeconds
+			seconds: Math.round paceSeconds
 		}).format('m:ss')
 
-	getDistance: (pace, time)->
-		'@todo'
+	getDistance: (pace, time, precision)->
+		timeSecons = timeToSeconds(time)
+		paceSecons = timeToSeconds(pace)
+
+		dist = timeSecons / paceSecons
+		dist.toFixed(precision || 2)
 
 	getTime: (distance, pace)->
-		'@todo'
+		kilometres = normalizeDistance(distance)
+		paceInSeconds = timeToSeconds(pace)
+		timeInSeconds = paceInSeconds * kilometres
+
+		timeMinutes = Math.floor timeInSeconds / 60
+		timeSeconds = timeInSeconds - timeMinutes * 60
+
+		format = if timeMinutes >= 60 then 'h:mm:ss' else 'm:ss'
+
+		moment.duration({
+			minutes: timeMinutes
+			seconds: Math.round timeSeconds
+		}).format(format)
 
 module.exports = PaceCalc
