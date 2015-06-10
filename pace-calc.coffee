@@ -5,6 +5,8 @@ moment = require 'moment'
 class PaceCalc
 
 	normalizeDistance = (distance)->
+		if typeof distance isnt 'string'
+			distance = distance.toString()
 		distance = distance.replace ',', '.'
 		parseFloat distance
 
