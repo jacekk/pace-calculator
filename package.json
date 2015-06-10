@@ -9,6 +9,7 @@
   "author": "JacekK",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.10.3"
+    "moment": "^2.10.3",
+    "moment-duration-format": "^1.3.0"
   }
 }
