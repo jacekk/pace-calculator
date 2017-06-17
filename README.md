@@ -3,9 +3,9 @@
 
 ### Requirements
 
-* Node ~0.10
-* Npm ~2.10
-* CoffeeScript ~1.9.0
+* Node
+* Npm
+* CoffeeScript
 
 ### Aliases (for Ubuntu-like OSes)
 
