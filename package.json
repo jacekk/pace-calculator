@@ -4,13 +4,13 @@
   "description": "",
   "main": "app.coffee",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script/register"
+    "test": "mocha --require coffee-script/register 'test/*.coffee' "
   },
   "author": "JacekK",
   "license": "MIT",
   "dependencies": {
     "coffee-script": "^1.12.7",
-    "mocha": "^5.2.0",
+    "mocha": "^6.2.0",
     "moment": "^2.23.0",
     "moment-duration-format": "^2.2.2"
   }
