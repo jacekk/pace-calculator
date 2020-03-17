@@ -1,17 +1,16 @@
-# Runners calculator
+# Pace calculator for runners
 
 
 ### Requirements
 
-* Node
-* Npm
-* CoffeeScript
+* Node [v10 or v12]
+* Yarn
 
 ### Aliases (for Ubuntu-like OSes)
 
-* alias pace-from-time-and-dist="coffee ~/path/to/app.coffee pace"
-* alias time-from-dist-and-pace="coffee ~/path/to/app.coffee time"
-* alias dist-from-pace-and-time="coffee ~/path/to/app.coffee distance"
+* alias pace-from-time-and-dist="~/path/to/node_modules/.bin/coffee ~/path/to/app.coffee pace"
+* alias time-from-dist-and-pace="~/path/to/node_modules/.bin/coffee ~/path/to/app.coffee time"
+* alias dist-from-pace-and-time="~/path/to/node_modules/.bin/coffee ~/path/to/app.coffee distance"
 
 ### Usage
 
