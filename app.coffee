@@ -1,4 +1,4 @@
-PaceCalc = require './pace-calc.coffee'
+PaceCalc = require './src/pace-calc.coffee'
 
 if process.argv.length < 5
 	console.log 'invalid param number'

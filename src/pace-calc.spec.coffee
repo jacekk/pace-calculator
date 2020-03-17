@@ -1,5 +1,6 @@
 assert = require 'assert'
-PaceCalc = require '../pace-calc'
+
+PaceCalc = require './pace-calc'
 
 describe 'pace-calc', ->
 
