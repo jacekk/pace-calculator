@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "coffeescript": "^2.5.1",
-    "jest": "^25.1.0",
+    "jest": "^25.2.7",
     "jest-preset-coffeescript": "^1.1.1",
     "moment": "^2.23.0",
     "moment-duration-format": "^2.2.2"
