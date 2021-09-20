@@ -3,7 +3,7 @@
 
 ### Requirements
 
-* Node [v10 or v12]
+* Node [v10 or v12 or v14]
 * Yarn
 
 ### Aliases (for Ubuntu-like OSes)
