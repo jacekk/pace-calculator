@@ -9,17 +9,17 @@
   "author": "JacekK",
   "license": "MIT",
   "dependencies": {
+    "@onlytabs/jest-coffee-preprocessor": "^2.0.1",
     "babel-jest": "^29.3.0",
     "coffeescript": "^2.7.0",
     "jest": "^29.3.0",
-    "jest-coffee-preprocessor": "^1.0.0",
     "moment": "^2.29.4",
     "moment-duration-format": "^2.2.2"
   },
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
-      "^.+\\.coffee$": "<rootDir>/node_modules/jest-coffee-preprocessor/index.js"
+      "^.+\\.coffee$": "<rootDir>/node_modules/@onlytabs/jest-coffee-preprocessor/index.js"
     },
     "testMatch": [
       "<rootDir>/src/**/*.spec.coffee"
