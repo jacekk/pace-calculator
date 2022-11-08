@@ -9,9 +9,9 @@
   "author": "JacekK",
   "license": "MIT",
   "dependencies": {
-    "babel-jest": "^27.5.1",
-    "coffeescript": "^2.6.1",
-    "jest": "^27.5.1",
+    "babel-jest": "^29.3.0",
+    "coffeescript": "^2.7.0",
+    "jest": "^29.3.0",
     "jest-coffee-preprocessor": "^1.0.0",
     "moment": "^2.29.4",
     "moment-duration-format": "^2.2.2"
